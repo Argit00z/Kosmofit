@@ -8,7 +8,7 @@
 
 <head>
 
-    <!-- <base href="https://cosmofit.club/"></base> -->
+    
 
     <meta charset=utf-8>
 
@@ -18,9 +18,9 @@
 
     <meta name='Keywords' content=''>
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="O:/vscode/kosmofit/style.css">
     
-    <link rel="stylesheet" href="./css/right-nav-style.css">
+    <link rel="stylesheet" href="O:/vscode/kosmofit/css/right-nav-style.css">
     <script src="assets/templates/site/js/jquery-1.7.2.min.js"></script>
 
     <!--[if lt IE 9]>
@@ -91,8 +91,8 @@
         <div class="fmain">
             <div class="fright">
                 <a class="topbtn" href="./card.html">Абонементы</a>
-                <a class="topbtn" href="./uslugi.html">Услуги</a>
-                <a class="topbtn" href="./timing.html">Расписание</a>
+                <a href="./uslugi.html">Услуги</a>
+                <a href="./timing.html">Расписание</a>
                 <a class="phone">+7 (926) 061-69-44</a>
                 <input type="checkbox" id="nav-toggle" hidden>
                 <nav class="nav">
@@ -109,6 +109,13 @@
                 <img style="width: 215px; height: 74px;" src="O:/vscode/kosmofit/photo/logo.jpg" alt="">
             </a>
             
+
+            
+            <!-- <div class="fleft" style="font-size: 24px;">
+                <a href="O:/vscode/kosmofit/index.html">
+                    <img style="width: 215px; height: 74px;" src="O:/vscode/kosmofit/photo/logo.jpg" alt="">
+                </a>
+            </div> -->
         </div>
     
 </header>
@@ -118,8 +125,7 @@
 
 
         
-
-    </div>
+</div>
 
 <body class="s-fitnes">
 
@@ -135,20 +141,9 @@
 
             </div>
 
-        <div class="top-menu">
-
-			<video class="topimg" src="https://kometa.fit" poster="https://kometa.fit/thumbor/unsafe/kometa.fit/system/uploaded_files/files/000/000/301/short/%E2%95%A8%D0%B1%E2%95%A8%D0%AB%E2%95%A8%D0%A0%E2%95%A8%D0%A8%E2%95%A0%D0%96%E2%95%A8%D0%A4%E2%95%A8%D0%A5%E2%95%A8%D0%B0.jpg?1619440327" loop="" autoplay="" playsinline=""></video>
+            <p style="text-align: center; padding: 5 5 5px; margin-left: 70px; margin-bottom: 15PX; font-size: 54px; font-weight: 50; color: white;line-height: 60PX;  ">
+                Расписание</p>
             
-	    </div>
-        <div class="top-menu">
-
-			<video class="topimg1" style="left: 40%;" src="https://kometa.fit" poster="https://kometa.fit/thumbor/unsafe/kometa.fit/system/uploaded_files/files/000/000/138/short/%D0%B3%D1%80%D1%83%D0%BF%D0%BF_%D0%A1%D0%9B%D0%90%D0%99%D0%94%D0%95%D0%A0.jpg?1633524375" loop="" autoplay="" playsinline=""></video>
-            
-	    </div>
-            <p style="padding: 5 5 5px; margin-left: 70px; margin-bottom: 15PX; font-size: 64px; font-weight: 50; color: transparent; -webkit-text-stroke: 2px rgb(255, 255, 255);line-height: 60PX;  ">
-                Стань членом нашего клуба,</p>
-            <p style="padding: 5 5 5px; margin-left: 70px; margin-bottom: 40PX; font-size: 64px; font-weight: 50; color: transparent; -webkit-text-stroke: 2px rgb(255, 255, 255);line-height: 60PX;  ">
-                приводи друзей и получай скидку</p>
         </div>
         <div class="main-img">
 
@@ -171,56 +166,94 @@
 <div class="mp-inner-cont">
 
 
-
-
-
-<div class="brick">
-
-<div class="in" style="background-image: src='https://kometa.fit//thumbor/unsafe//300x700/kometa.fit/system/uploaded_files/files/000/000/233/short/ATMOS_1.jpg?1634736761/';">
     
-<h2 style="padding: 0 0 0px; font-size: 25px; color: #ffffff;">Виды тренировок </h2>
+    <p style="text-align: center;"><span style="line-height: 1.5;"><iframe id='f675605'
 
-<img style="width: 100%; height: 145px;" src="O:\vscode\kosmofit\photo\trenajer.jpg" alt="" />
-<p style="color: #ffffff; text-align: center; font-size: 18px;">
-    
-    -Кардио<br>
-    -BodyMix<br>
-    -Stretching<br>
-    -ANTIGRAVITY<br>
-    -Здоровая спина<br>
-    -Йога<br>
+        src='https://kosmofitclubmailru.impulsecrm.ru/widget/1'
 
-</p>
+        style='width:900px; min-height:600px; border:0; transform:translateZ(0)'
 
-</div>
+        frameborder='0' scrolling='no'>
 
-</div>
+</iframe>
 
 
+<script>
 
-<div class="brick">
+  const f675605 = document.getElementById('f675605');
 
-<div class="in">
+  const iws1PostScroll = function(e) {
 
-<h2 style="padding: 0 0 0px; color: #ffffff;">Набор в группу</h2>
+    const offset = Math.max(1, -f675605.getBoundingClientRect().top);
 
+    f675605.contentWindow.postMessage({ iws1ScrollY: offset }, "*");
 
+  };
 
-<div style="width: 205px; height: 180px; margin: 0px auto;"><img style="padding: 0 0 40px; width: 100%; height: 220px;" src="./photo/ofp_b.jpg" alt="" /></div>
+  const iw1PostUrl = function(url) {
 
+    f675605.contentWindow.postMessage({ iw1Url: url }, "*");
 
+  };
 
-<p style="color: #ffffff; text-align: center; font-size: 18px;">ОФП 5+</p>
+  const iw1PostStorage = function(name) {
 
-</div>
-    
-</div>
+    const value = localStorage.getItem(name)
 
+    if (value !== null) {
 
+      f675605.contentWindow.postMessage({ iw1Storage: { name, value } }, "*");
 
-  </div>
+    }
 
-            <div class="clear"></div>
+  };
+
+  window.addEventListener('message', function(e) {
+
+    const loaded = e.data.iw1Loaded;
+
+    if (loaded) {
+
+      iw1PostUrl(window.location.href);
+
+      iw1PostStorage('impulsecrm_active');
+
+      iw1PostStorage('impulsecrm_verified');
+
+    }
+
+    const height = e.data.iws1Height;
+
+    if (height) {
+
+      f675605.height = height;
+
+      iws1PostScroll();
+
+    }
+
+    const storage = e.data.iw1Storage;
+
+    if (storage) {
+
+      localStorage.setItem(storage.name, storage.value);
+
+    }
+
+    const sent = e.data.iws1Sent;
+
+    if (sent) {
+
+      // Заявка отправлена
+
+    }
+
+  });
+
+  window.addEventListener('scroll', iws1PostScroll);
+
+</script></span></p>
+<div><span style="color: #0076bd; font-size: 120%;"><strong><span style="text-decoration: underline;">&nbsp;</span></strong></span></div>
 
         </div>
         
