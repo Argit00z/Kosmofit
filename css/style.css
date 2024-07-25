@@ -242,12 +242,10 @@ p {
 }
 
 .fright1 {
-    top: 50%;
-    left: 50%;
-    float:right;
+    
+    
+    float: right;
     font-size: 18px;
-    
-    
 }
 .clear {clear:both;}
 h1 {font-size:32px; color:#2b2b2b; padding:0 0 35px; text-transform: uppercase;}
@@ -306,23 +304,7 @@ h4 {clear:both; font-size:16px; line-height:26px; color:#FF6600; text-transform:
     behavior: url(PIE.htc);
     position:relative;
 }
-.mp-block header nav li a:hover {background:#f00;}
-.mp-block header nav li.item9 a {background:#2b2b2b;}
-.mp-block header nav li.item9 a:hover {background:#f00;}
-.mp-block header nav li.item335 a {background:#2b2b2b;}
-.mp-block header nav li.item335 a:hover {background:#f00;}
-.mp-block header nav li.item336 a {background:#2b2b2b;}
-.mp-block header nav li.item336 a:hover {background:#f00;}
-.mp-block header nav li.item363 a {background:#2b2b2b;}
-.mp-block header nav li.item363 a:hover {background:#f00;}
-.mp-block header nav li.item364 a {background:#2b2b2b;}
-.mp-block header nav li.item364 a:hover {background:#f00;}
-.mp-block header nav li.item379 a {background:#2b2b2b;}
-.mp-block header nav li.item379 a:hover {background:#f00;}
-.mp-block header nav li.item6 a {background:#2b2b2b;}
-.mp-block header nav li.item6 a:hover {background:#f00;}
-.mp-block header nav li a span {vertical-align: middle; display: table-cell; padding:0 0px;}
-/* End Main page header */
+
 
 .block header {overflow:hidden; padding:30px 40px 30px;}
 .block header .logo {padding:10px 0 0; float:left; height: 218px; width:430px}
@@ -337,60 +319,45 @@ h4 {clear:both; font-size:16px; line-height:26px; color:#FF6600; text-transform:
 .block header nav li a span {vertical-align: middle; display: table-cell; padding:0 10px;}
 
 /* Main page cont */
-.mp-cont {padding:0 40px 40px;}
-.mp-cont .mp-inner-cont {width: 860px;margin: 0 auto;}
-
-.mp-cont .mp-inner-cont nav2 {width:100%;}
-.mp-cont .mp-inner-cont nav2 li {list-style:none; display:block; float:left; margin:0 16px 10px 5px; width:270px;}
-.mp-cont .mp-inner-cont nav2 li.last {margin:0 0 10px 0;}
-.mp-cont .mp-inner-cont nav2 li a {display:table; background:#ee7f00; border-radius:10px; text-decoration:none; color:#fff; font-weight: bold; height: 55px; font-size: 17px; text-align:center; width:100%; behavior: url(PIE.htc); position:relative;}
-.mp-cont .mp-inner-cont nav2 li a:hover {background:#c56a01;}
-.mp-cont .mp-inner-cont nav2 li a span {vertical-align: middle; display: table-cell; padding:0 10px;}
-.mp-cont .mp-inner-cont nav2 li.item551 a {background:#0076BD;}
-.mp-cont .mp-inner-cont nav2 li.item551 a:hover {background:#015b90;}
-.mp-cont .mp-inner-cont nav2 li.item552 a {background:#0076BD;}
-.mp-cont .mp-inner-cont nav2 li.item552 a:hover {background:#015b90;}
-.mp-cont .mp-inner-cont nav2 li.item553 a {background:#0076BD;}
-.mp-cont .mp-inner-cont nav2 li.item553 a:hover {background:#015b90;}
 
 
-.mp-cont .gallery span {background:rgba(0, 0, 0, 0.5); bottom: 0; color: #fff; font-weight:bold; display: block; font-size: 14px; font-weight: bold; line-height: 18px; padding: 5px 0 4px; position: absolute; text-align: center; text-transform: uppercase; width: 100%;}
-.mp-cont .brick {
-    box-shadow: 0px 0px 15px rgba(223, 219, 219, 0.3);
-    transition: box-shadow 0.3s ease-in-out;
-    transition: background-color 0.3s ease-in-out;
-    behavior: url(PIE.htc);
-    float:left; 
-    width:270px;
-    height: 500px;
-    margin:0px 50px 20px 20px;
-    padding: auto;
+.countainer_info{
+    
+    display: inline-block;
+    
+   
+    
 }
-.mp-cont .brick:hover {
+
+.brick321 p {
+   
+    padding: 10px 20px 30px;
+    text-align: justify;
+    color: #ffffff; 
+}
+.brick321 {
+    
+    margin: 0 20px 0 20px;
+    display: inline-block;
+    width: min-content;
+    background-color: #3b3a3a;
+}
+.brick:hover {
     background-color: rgba(23, 23, 23, 0.476);
     transition: background-color 0.2s ease-in-out;
     box-shadow: -4px 0px 44px rgba(255, 0, 0, 0.485);
 }
-.mp-cont .brick .in {padding:15px 25px; text-align:center;}
-.mp-cont .brick .in h2 {padding:0 0 10px;}
-.mp-cont .brick .in  p {padding:5px 0 0;}
-.mp-cont .last {margin:0px;}
-/* End Main page cont */
+
+.last {margin:0px;}
+
 
 .cont {padding:0 40px 40px;}
 .ladys  .cont, .s-fitnes  .cont {border-top:4px solid #b0afaa; padding-top:40px;}
-.cont .brick {
-    border-radius: 15px; 
-    box-shadow: 0 0 10px #707172; 
-    behavior: url(PIE.htc); 
-    float:left; width:40%; 
-    margin:10px 0px 20px 30px; 
-    padding: 10px 10px; 
-    min-height:500px;}
+
 /*.cont .brick {border-radius: 15px; box-shadow: 0 0 10px #707172; behavior: url(PIE.htc); float:left; width:30%; margin:0 3% 0 0; min-height:250px;}*/
-.cont .brick .in {padding:15px 25px; text-align:center;}
-.cont .brick .in h2 {padding:0 0 10px;}
-.cont .brick .in  p {padding:5px 0 0;}
+.brick .in {padding:15px 25px; text-align:center;}
+.brick .in h2 {padding:0 0 10px;}
+.brick .in  p {padding:5px 0 0;}
 
 .cont .last {margin:0px;}
 .cont aside {float:left; width:25%;}
@@ -447,8 +414,8 @@ h4 {clear:both; font-size:16px; line-height:26px; color:#FF6600; text-transform:
     background-color: #000;  
 }
 .footer1 {
-    
-    margin:0 auto;
+    display: inline;
+    margin-top: auto;
     background-color: #000;
     color:#fff;
     overflow:hidden;
