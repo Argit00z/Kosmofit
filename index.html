@@ -15,6 +15,14 @@
         <!-- Стили css -->
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/right-nav-style.css">
+        <link rel="stylesheet" href="./css/slider.scss">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css'>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        
+        <!-- Хуй его знает почему именно здесь, но иначе не работает) -->
+        <script>!function(e){"undefined"==typeof module?this.charming=e:module.exports=e}(function(e,n){"use strict";n=n||{};var t=n.tagName||"span",o=null!=n.classPrefix?n.classPrefix:"char",r=1,a=function(e){for(var n=e.parentNode,a=e.nodeValue,c=a.length,l=-1;++l<c;){var d=document.createElement(t);o&&(d.className=o+r,r++),d.appendChild(document.createTextNode(a[l])),n.insertBefore(d,e)}n.removeChild(e)};return function c(e){for(var n=[].slice.call(e.childNodes),t=n.length,o=-1;++o<t;)c(n[o]);e.nodeType===Node.TEXT_NODE&&a(e)}(e),e});
+        </script>
 
         
     </head>
@@ -48,27 +56,100 @@
         <main style="position: relative; ">
 
             <section>
-                <div class="slider">
-                        <button class="prev-button">
-                            <img style='opacity: 1; height: 20px;' src="./photo/keyboard-left-arrow-button_icon-icons.com_72692.png" alt="">
-                        </button>
-                        <button class="next-button">
-                            <img style='opacity: 1; height: 20px;' src="./photo/keyboard-right-arrow-button-1_icon-icons.com_72690.png" alt="">
-                        </button>
-                    <div class="slider-box-left"></div>
-                    <div class="slider-box-right"></div>
-                    <div class="slider-box-center"></div>
-                    <div class="text-block">
-                        <h2 class="first-photo" style="visibility: visible;">Это больше чем пенис</h2>
-                        <h2 class="second-photo" style="visibility: hidden;">А тут очень большой пенис</h2>
+                <!-- <div class="CSSgal">
+                    <s id="s1"></s> 
+                    <s id="s2"></s>
+                    <s id="s3"></s>
+                    <s id="s4"></s>
+                  
+                    <div class="slider">
+                                <div style="background-image: url(./photo/trenajer.jpg) ; background-position: center;">
+                                    <h2 class="first">KosmoFIT</h2>
+                                    <h2 style="top: 50px;" class="first1"> Самое лучшее место</h2> 
+                                    
+                                    
+                                </div> 
+                                <div style="background:#85b;">
+                                    <h2 class="second">Slide 2</h2>
+                                </div>
+                                <div style="background:#e95;">
+                                    <h2 class="third">Slide 3</h2>
+                                </div>
+                                <div style="background:#e59;">
+                                    <h2 class="fourth">Slide 4</h2>
+                        </div>
                     </div>
-
-
-                    <div class="slider-line"></div>
                     
                     
-                
-                </div>
+                    <div class="prevNext">
+                        
+                      <div><a href="#s4" ></a><a href="#s2"></a></div>
+                      <div><a href="#s1"></a><a href="#s3"></a></div>
+                      <div><a href="#s2"></a><a href="#s4"></a></div>
+                      <div><a href="#s3"></a><a href="#s1"></a></div>
+                    </div>
+                  
+                    <div class="bullets">
+                      <a href="#s1">1</a>
+                      <a href="#s2">2</a>
+                      <a href="#s3">3</a>
+                      <a href="#s4">4</a>
+                    </div>
+                  
+                  </div> -->
+                  <section>
+  
+                    <div class="swiper-container slideshow">
+                      
+                      <div class="swiper-wrapper">
+                        
+                          <div class="swiper-slide slide">
+                            <div class="slide-image" style="background-image: url(https://images.unsplash.com/photo-1538083024336-555cf8943ddc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=66b476a51b19889e13182c0e4827af18&auto=format&fit=crop&w=1950&q=80)"></div>
+                            <span class="slide-title">Ахуеть!</span>
+                          </div>
+                        
+                          <div class="swiper-slide slide">
+                            <div class="slide-image" style="background-image: url(https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e07d2457879a4e15577ec75a31023e47&auto=format&fit=crop&w=2134&q=80)"></div>
+                            <span class="slide-title">Ебать!</span>
+                          </div>
+                        
+                        <div class="swiper-slide slide">
+                            <div class="slide-image" style="background-image: url(https://images.unsplash.com/photo-1482059470115-0aadd6bf6834?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=267bba9a4e280ec64388fe8fb01e9d1b&auto=format&fit=crop&w=1950&q=80)"></div>
+                            <span class="slide-title">Это выглядит!</span>
+                                
+                          </div>
+                        
+                  <!--         <div class="swiper-slide slide">
+                            <div class="slide-imageswiper-lazy" data-background="https://images.unsplash.com/photo-1538083024336-555cf8943ddc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=66b476a51b19889e13182c0e4827af18&auto=format&fit=crop&w=1950&q=80">
+                            </div>
+                            </div>
+                            <span class="slide-title">Exotic places</span>
+                          </div>
+                        
+                          <div class="swiper-slide slide">
+                            <div class="slide-image swiper-lazy" data-background="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e07d2457879a4e15577ec75a31023e47&auto=format&fit=crop&w=2134&q=80">
+                            </div>
+                            <span class="slide-title">Meet ocean</span>
+                          </div>
+                        
+                          <div class="swiper-slide slide">
+                            <div class="slide-image swiper-lazy" data-background="https://images.unsplash.com/photo-1482059470115-0aadd6bf6834?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=267bba9a4e280ec64388fe8fb01e9d1b&auto=format&fit=crop&w=1950&q=80">
+                            </div>
+                            <span class="slide-title">Around the world</span>
+                          </div> -->
+                          
+                      </div>
+                      
+                      <div class="slideshow-pagination"></div>
+                      
+                      <div class="slideshow-navigation">
+                          <div class="slideshow-navigation-button prev"><span class="fas fa-chevron-left"></span></div>
+                          <div class="slideshow-navigation-button next"><span class="fas fa-chevron-right"></span></div>
+                      </div>
+                      
+                    </div>
+                    
+                  </section>
                 <article>
                     <p style="padding: 5 5 5px; margin-left: 70px; margin-bottom: 15PX; font-size: 64px; font-weight: 50; color: transparent; -webkit-text-stroke: 2px rgb(255, 255, 255);line-height: 60PX;  ">
                         Стань членом нашего клуба,</p>
@@ -106,6 +187,10 @@
     </body>
 
     <!-- Скрипты js -->
-    <script type="text/javascript" src="./js/sqript.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
+    <script src="./js/sqript.js"></script>
+    <!-- Слайдер -->
+    
 
 </html>
