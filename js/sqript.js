@@ -35,7 +35,7 @@ class Slideshow {
             delay: this.config.slideshow.delay,
             disableOnInteraction: false,
           },
-          speed: 500,
+          speed: 700,
           preloadImages: true,
           updateOnImagesReady: true,
           
@@ -129,9 +129,10 @@ class Slideshow {
         this.DOM.activeSlideTitleLetters.forEach((letter,pos) => {
 					TweenMax.to(letter, .6, {
 						ease: Back.easeOut,
-						delay: pos*.05,
-						startAt: {y: '50%', opacity: 0},
+						delay: pos* .1,
+						startAt: {y: '70%', x: '60%', opacity: 0},
 						y: '0%',
+            x: '0%',
 						opacity: 1
 					});
 				});
