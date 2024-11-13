@@ -1,0 +1,346 @@
+
+/* ИМПОРТ ЗДЕСЬ */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+/* ДЛЯ АДАПТИВНОГО ИНТЕРФЕЙСА */
+
+@media (max-width: 810px) {
+    
+    .kosmostudio-link-btn{
+        display: none;
+        visibility: hidden;
+    }
+    .phone {
+        padding-right: 10px;
+    }
+  }
+  @media (max-width: 473px) {
+    .phone {
+        display: none;
+    }
+    
+}
+@media (min-width: 45em) {
+    .slide-title {
+      font-size: 7vw;
+      max-width: none;
+    }
+}
+
+/* СТИЛИ ДЛЯ ТЕГОВ HTML */
+
+body {
+    width:auto;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(45,39,39,1) 100%, rgba(158,149,149,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font:14px/18px Trebuchet MS; 
+    color:#ffffff; height:100%; 
+    max-width:auto; 
+    margin:0 auto; 
+    position:relative;
+    display: block;
+}
+
+
+a {
+    color:#ffffff;
+    text-decoration:none;
+    padding-left: 10px;
+    
+}
+
+section {
+    width: 100%;
+
+}
+
+/* ОСНОВНЫЕ СТИЛИ */
+
+/* ЕСЛИ ПИШЕМ СТИЛИ ДЛЯ ОПРЕДЕЛЁННОГО БЛОКА КОДА, ТО ОТДЕЛЯЕМ ТАКОЙ ЛИНИЕЙ ↓ */
+
+/* ---------------------------------------------------------------------------------------- */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+  
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.slide-image {
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    width: calc(100% + 400px);
+    height: calc(100% + 400px);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.slide-title {
+    padding: 5 5 5px;
+    margin-left: 70px;
+    margin-bottom: 15PX;
+    font-size: 64px; 
+    font-weight: 50; 
+    color: transparent; 
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    line-height: 60PX; 
+}
+
+.slide-title span {
+    white-space: pre;
+    display: inline-block;
+    opacity: 0;
+}
+  
+.slideshow {
+    position: relative;
+}
+
+.slideshow-pagination {
+    position: absolute;
+    bottom: 5rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s opacity;
+    z-index: 1004;
+}
+
+.slideshow-pagination-item {
+    display: flex;
+    align-items: center;
+}
+
+.slideshow-pagination-item .pagination-number {
+    opacity: 0.5;
+}
+
+.slideshow-pagination-item:hover, .slideshow-pagination-item:focus {
+    cursor: pointer;
+}
+
+.slideshow-pagination-item:last-of-type .pagination-separator {
+    width: 0;
+}
+
+.slideshow-pagination-item.active .pagination-number {
+    opacity: 1;
+}
+
+.slideshow-pagination-item.active .pagination-separator {
+    width: 10vw;
+}
+
+.slideshow-navigation-button.next {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:3rem;
+    width: 5rem;
+    z-index: 1111;
+    transition: all 0.3s ease;
+    color: #FFF;
+    animation: arrow-right 2s infinite;    
+}
+
+.slideshow-navigation-button.prev {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:3rem;
+    width: 5rem;
+    z-index: 1111;
+    transition: all 0.3s ease;
+    color: #FFF;
+    animation: arrow-left 2s infinite;    
+}
+
+.slideshow-navigation-button.next:hover, .slideshow-navigation-button.next:focus {
+    cursor: pointer;
+    animation: none;   
+}
+
+.slideshow-navigation-button.prev:hover, .slideshow-navigation-button.prev:focus {
+    cursor: pointer;
+    animation: none;    
+}
+  
+.slideshow-navigation-button.prev {
+    left: 0;
+}
+
+.slideshow-navigation-button.next {
+    right: 0;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+.anim.module {
+    transform: translateY(20%);
+    transition: all 1s;
+    opacity: 0;
+}
+
+.anim.module.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y:  auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+
+.modal-box{
+    position: relative;
+    max-width: 500px;
+    padding: 45px;
+    z-index: 1000;
+    background-color: white;
+    margin: 30px 15px;
+    transform: translateY(100px);
+    transition: 0.8s;
+}
+.modal.open{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal.open .modal-box{
+    transform: translateY(0);
+}
+
+.modal-close-btn{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    border: none ;
+    background-color: transparent;
+    padding: 5px;
+}
+
+.cards {    
+    background-color: #ffffff;
+    width: 300px;
+    height: 600px;
+    display: grid;
+    overflow-y: auto;
+    padding-top:    30% ;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 40px;
+    color: #ffffff;
+    transition: 0.5s;
+    z-index: 1000;
+    display: inline-block;
+    margin: 200px 70px 0 70px;
+    position:inherit;
+    font-weight: 600;    
+}
+
+.cards:hover{
+    transform: scale(1.1);  
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+.kosmostudio-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative;
+    display: inline-block; 
+    padding-bottom: 5px;
+    padding-left: 0;
+}
+
+.kosmostudio-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    left: 0;
+    bottom: -2px;
+    background: rgb(255, 255, 255);
+    transition: width 0.3s ease;
+}
+
+.kosmostudio-link:hover::after {
+    width: 100%;
+    text-decoration: solid underline 3px dotted red red ;        
+    transition: width 0.3s ease;
+}
+
+.kosmostudio-link-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  position: relative;
+  display: inline-block; 
+  padding-bottom: 5px;
+  padding-left: 0;
+}
+
+.kosmostudio-link-btn::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  left: 0;
+  bottom: -2px;
+  background: rgb(255, 255, 255);
+  transition: width 0.3s ease;
+}
+
+.kosmostudio-link-btn:hover::after {
+  width: 100%;
+  text-decoration: solid underline 3px dotted red red ;    
+  transition: width 0.3s ease;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+

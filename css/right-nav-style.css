@@ -10,13 +10,13 @@
     width: 320px;
     min-width: 320px;
     /* фиксируем и выставляем высоту панели на максимум */
-    height: 100%;
+    height: 300px;
     position: fixed;
     top: 0;
     bottom: 0;
     margin: 0;
     /* сдвигаем (прячем) панель относительно правого края страницы */
-    right: -320px;
+    right: -360px;
     /* внутренние отступы */
     padding: 15px 20px;
     /* плавный переход смещения панели */
@@ -24,7 +24,9 @@
     -moz-transition: right 0.3s;
     transition: right 0.3s;
     /* определяем цвет фона панели */
-    background: #000000;
+    background: rgba(0, 0, 0, 0.171);
+    backdrop-filter: blur(8px);
+    
     /* поверх других элементов */
     z-index: 2000;
 }
@@ -39,9 +41,9 @@
     /* абсолютно позиционируем */
     position: absolute;
     /* относительно правого края панели */
-    right: 320px;
+    right: 360px;
     /* отступ от верхнего края панели */
-    top: 2em;
+    top: 1em;
     /* внутренние отступы */
     padding: 0.5em;
     /* определяем цвет фона переключателя
@@ -150,7 +152,7 @@
  * см: http://timpietrusky.com/advanced-checkbox-hack
  */
 
-body {
+/* body {
     -webkit-animation: bugfix infinite 1s;
 }
 
@@ -158,7 +160,7 @@ body {
     to {
       padding: 0;
     }
-}
+} */
 
 
 /**
