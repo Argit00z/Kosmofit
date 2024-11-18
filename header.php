@@ -33,13 +33,13 @@
             <nav class="fmain">
                 <div class="fright">
                   
-                    <a class="kosmostudio-link-btn" style="font-size: 20px;" href="./card.html">Абонменты</a>
-                    <a class="kosmostudio-link-btn" style="margin-left: 8px; font-size: 20px" href="./uslugi.html">Услуги</a>
-                    <a class="kosmostudio-link-btn" style="margin-left: 8px; font-size: 20px" href="./timing.html">Расписание</a>
+                    <a class="kosmostudio-link-btn" style="font-size: 20px;" href="./card.php">Абонементы</a>
+                    <a class="kosmostudio-link-btn" style="margin-left: 8px; font-size: 20px" href="./uslugi.php">Услуги</a>
+                    <a class="kosmostudio-link-btn" style="margin-left: 8px; font-size: 20px" href="./timing.php">Расписание</a>
                     <a class="phone">+7 (926) 061-69-44</a>
                     
                 </div>
-                <a class="kosmostudio-link" style="z-index: 1;" href="./index.html">
+                <a class="kosmostudio-link" style="z-index: 1;" href="./main.php">
                     KosmoFit
                 </a>
                 <a class="kosmostudio-link" style="z-index: 1; margin-left: 8px;" href="./index1.html">   
@@ -52,9 +52,9 @@
 
                         <label for="nav-toggle" class="nav-toggle" onclick></label>
                         <ul>
-                            <li><a href="./card.html">Абонементы</a>
-                            <li><a href="./uslugi.html">Услуги</a>
-                            <li><a href="./timing.html">Расписание</a>
+                            <li><a href="./card.php">Абонементы</a>
+                            <li><a href="./uslugi.php">Услуги</a>
+                            <li><a href="./timing.php">Расписание</a>
                         </ul>
                     </div>
         <main>

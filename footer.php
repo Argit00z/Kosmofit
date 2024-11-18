@@ -16,7 +16,10 @@
     <!-- Скрипты js -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
+    <script type="text/javascript" src="./js/ani-scroll.js"></script>
+    <script type="text/javascript" src="./js/modal.js"></script>
     <script src="./js/sqript.js"></script>
+    <script src="./js/header-scroll.js"></script>
     <!-- Слайдер -->
     
 

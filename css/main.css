@@ -36,18 +36,24 @@
 
 body {
     width:auto;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(45,39,39,1) 100%, rgba(158,149,149,1) 100%);
+    background: #000000;
+    /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(45,39,39,1) 100%, rgba(158,149,149,1) 100%); */
     background-repeat: no-repeat;
     background-size: cover;
     font:14px/18px Trebuchet MS; 
-    color:#ffffff; height:100%; 
+    color:#ffffff; 
+    height:100%; 
     max-width:auto; 
     margin:0 auto; 
     position:relative;
     display: block;
 }
 
+
+
+main{
+    min-height: 100vh;
+}
 
 a {
     color:#ffffff;
@@ -287,7 +293,7 @@ section {
     font-size: 24px;
     font-weight: 700;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     position: relative;
     display: inline-block; 
     padding-bottom: 5px;
@@ -344,3 +350,122 @@ section {
 
 /* ---------------------------------------------------------------------------------------- */
 
+@media (max-width: 900px) {
+    .trainings-cards {
+        flex-direction: column;
+        transition: 0.5s ease;
+        align-items: center;
+    }
+}
+
+.trainings-cards {
+    
+    position: relative;
+    display: flex;
+    justify-content:center;
+    
+    
+}
+
+.card-training {
+    
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: #1e1e1f;
+    min-height: 30vh;
+    max-height: 40vh;
+    width: 40vh;
+    min-width: 30vh;
+    margin: 3.33vh;
+}
+
+.card-training:hover {
+    background-color: #1e1e1f93;
+    transition: 0.5s; 
+    
+}
+
+.card-training:hover .card_traning_shadow{
+    box-shadow: none;
+    transition: 0.5s; 
+    
+}
+
+.card-training:hover .header-trainings{
+    color: #ffffff;
+    transition: 0.5s; 
+}
+
+.card-training:hover .description-trainings{
+    color: #ffffff;
+    visibility: visible;
+    transition: 0.5s;
+    transform:translateY(-50%) ;
+}
+
+
+
+.header-trainings {
+    position: relative;
+    color: #ffffff;
+    transition: 0.5s; 
+    vertical-align: middle;
+    margin-top: 0 ;
+    z-index: 11;
+}
+
+.description-trainings{
+    position: relative;
+    z-index: 100;
+    margin-top: 50px;
+    visibility: hidden;
+    transition: 0.3s ease; 
+    color: #f7f4f4;
+    
+}
+
+.card_traning_shadow{
+    position: absolute;
+    top: 30%;
+    left: 8.4%;
+    width: calc(100% - 60px);
+    height: calc(100% - 110px);
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: rgba(219, 0, 18, 0.397) 0px 80px 90px, rgba(255, 255, 255, 0.2) 0px 40px 30px;
+    z-index: -1;
+    transition: 0.5s;
+    
+    
+}
+
+.card_traning_shadow:hover{
+    box-shadow: none;
+    transition: 0.5s;
+}
+
+
+.back_hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #3535357c;
+    z-index: 1;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.card-training:hover .back_hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.title-article {
+    margin-top: 100px;
+    position: relative;
+    text-align: center;
+    
+}
+
+
+/* ---------------------------------------------------------------------------------------- */

@@ -1,65 +1,78 @@
 <?php include('header.php'); ?>
 
-                <section>
-                  <section style="height: 70vh;">
-  
-                    <div class="swiper-container slideshow">
-                      
-                      <div class="swiper-wrapper">
-                        
-                          <div class="swiper-slide slide">
-                            <div class="slide-image" style="background-image: url(./photo/trenajer.jpg)"></div>
-                            <span class="slide-title">Текст</span>
-                          </div>
-                        
-                          <div class="swiper-slide slide">
-                            <div class="slide-image" style="background-image: url(https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e07d2457879a4e15577ec75a31023e47&auto=format&fit=crop&w=2134&q=80)"></div>
-                            <span class="slide-title">Текст</span>
-                          </div>
-                        
-                        <div class="swiper-slide slide">
-                            <div class="slide-image" style="background-image: url(https://images.unsplash.com/photo-1482059470115-0aadd6bf6834?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=267bba9a4e280ec64388fe8fb01e9d1b&auto=format&fit=crop&w=1950&q=80)"></div>
-                            <span class="slide-title">Текст</span>
-                                
-                          </div>
-                        
-                  <!--         <div class="swiper-slide slide">
-                            <div class="slide-imageswiper-lazy" data-background="https://images.unsplash.com/photo-1538083024336-555cf8943ddc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=66b476a51b19889e13182c0e4827af18&auto=format&fit=crop&w=1950&q=80">
-                            </div>
-                            </div>
-                            <span class="slide-title">Exotic places</span>
-                          </div>
-                        
-                          <div class="swiper-slide slide">
-                            <div class="slide-image swiper-lazy" data-background="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e07d2457879a4e15577ec75a31023e47&auto=format&fit=crop&w=2134&q=80">
-                            </div>
-                            <span class="slide-title">Meet ocean</span>
-                          </div>
-                        
-                          <div class="swiper-slide slide">
-                            <div class="slide-image swiper-lazy" data-background="https://images.unsplash.com/photo-1482059470115-0aadd6bf6834?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=267bba9a4e280ec64388fe8fb01e9d1b&auto=format&fit=crop&w=1950&q=80">
-                            </div>
-                            <span class="slide-title">Around the world</span>
-                          </div> -->
-                          
-                      </div>
-                      
-                      <!-- <div class="slideshow-pagination"></div> -->
-                      
-                      <div class="slideshow-navigation">
-                          <div class="slideshow-navigation-button prev"><span class="fa fa-chevron-left fa-2x"></span></div>
-                          <div class="slideshow-navigation-button next"><span class="fa fa-chevron-right fa-2x"></span></div>
-                      </div>
-                      
-                    </div>
-                    
-                  </section>
-                <article>
-                    <p style="padding: 5 5 5px; margin-left: 70px; margin-bottom: 15PX; font-size: 64px; font-weight: 50; color: transparent; -webkit-text-stroke: 2px rgb(255, 255, 255);line-height: 60PX;  ">
-                        Стань членом нашего клуба,</p>
-                    <p style="padding: 5 5 5px; margin-left: 70px; margin-bottom: 40PX; font-size: 64px; font-weight: 50; color: transparent; -webkit-text-stroke: 2px rgb(255, 255, 255);line-height: 60PX;  ">
-                        приводи друзей и получай скидку</p>
-                </article>
-            </section>
+  <section>
+    <section style="height: 70vh;">
+
+      <div class="swiper-container slideshow">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide slide">
+            <div class="slide-image" style="background-image: url(./photo/trenajer.jpg)"></div>
+            <span class="slide-title">Текст</span>
+          </div>
+        
+          <div class="swiper-slide slide">
+            <div class="slide-image" style="background-image: url(./photo/XXXL.jpg)"></div>
+            <span class="slide-title">Текст</span>
+          </div>
+        
+          <!-- <div class="swiper-slide slide">
+              <div class="slide-image" style="background-image: url(https://images.unsplash.com/photo-1482059470115-0aadd6bf6834?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=267bba9a4e280ec64388fe8fb01e9d1b&auto=format&fit=crop&w=1950&q=80)"></div>
+              <span class="slide-title">Текст</span>   
+          </div> -->
+      
+
+
+          <div class="slideshow-navigation">
+              <div class="slideshow-navigation-button prev"><span class="fa fa-chevron-left fa-2x"></span></div>
+              <div class="slideshow-navigation-button next"><span class="fa fa-chevron-right fa-2x"></span></div>
+          </div>
+
+        </div>
+      </div>    
+    </section>
+    <article>
+      <h1 class="title-article">ягодчиное качаолово, плюс вайб</h1>
+    </article>
+    <section class="trainings-cards" >  
+      <section class="card-training" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/card1.jpg); background-size: 40vh; background-repeat: no-repeat; ">
+        <div class="back_hover"></div>
+        <h1 class="header-trainings" style="padding-top: 5vh; padding-bottom: 5vh;">Тренировки</h1>
+        <p class="description-trainings">Lorem ipsum dolor sit amet consectetur 
+          adipisicing elit. Ullam, veniam magnam similique 
+          laborum sunt sequi fuga aspernatur 
+          maiores rem architecto nobis quae aliquam cumque odit quam dolorum, magni,
+           quidem earum!</p>
+        <div class="card_traning_shadow"></div>
+      </section>
+      <section class="card-training" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/ofp_b.jpg); background-size: 40vh; background-repeat: no-repeat; ">
+        <h1 class="header-trainings" style="padding-top: 3vh; padding-bottom: 3vh;">Групповые <br> <br> программы</h1>
+        <p class="description-trainings">Lorem ipsum dolor sit amet consectetur 
+          adipisicing elit. Ullam, veniam magnam similique 
+          laborum sunt sequi fuga aspernatur 
+          maiores rem architecto nobis quae aliquam cumque odit quam dolorum, magni,
+           quidem earum!</p>
+           <div class="card_traning_shadow"></div>
+      </section>
+      <section class="card-training" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/card2.webp); background-size: 40vh; background-repeat: no-repeat; ">
+        <h1 class="header-trainings" style="padding-top: 5vh; padding-bottom: 5vh;">Сауна</h1>
+        <p class="description-trainings">Lorem ipsum dolor sit amet consectetur 
+          adipisicing elit. Ullam, veniam magnam similique 
+          laborum sunt sequi fuga aspernatur 
+          maiores rem architecto nobis quae aliquam cumque odit quam dolorum, magni,
+           quidem earum!</p>
+        
+        <div class="card_traning_shadow"></div>
+      </section>
+      
+    </section>
+    <section class="abonement_cards" >  
+      
+    </section>
+    <section class="treners_cards">
+
+    </section>
+    
+  </section>
 
 <?php include('footer.php'); ?>
