@@ -357,6 +357,39 @@ section {
         align-items: center;
     }
 }
+.card_shadow{
+    position: absolute;
+    top: 30%;
+    left: 8.4%;
+    width: calc(100% - 60px);
+    height: calc(100% - 110px);
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: rgba(219, 0, 18, 0.397) 0px 80px 90px, rgba(255, 255, 255, 0.2) 0px 40px 30px;
+    z-index: -1;
+    transition: 0.5s;    
+}
+
+.card_shadow:hover{
+    box-shadow: none;
+    transition: 0.5s;
+}
+
+.back_hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #3535357c;
+    z-index: 1;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.title-article {
+    margin-top: 100px;
+    position: relative;
+    text-align: center;
+    
+}
 
 .trainings-cards {
     
@@ -378,6 +411,7 @@ section {
     width: 40vh;
     min-width: 30vh;
     margin: 3.33vh;
+    
 }
 
 .card-training:hover {
@@ -386,7 +420,7 @@ section {
     
 }
 
-.card-training:hover .card_traning_shadow{
+.card-training:hover .card_shadow{
     box-shadow: none;
     transition: 0.5s; 
     
@@ -402,9 +436,8 @@ section {
     visibility: visible;
     transition: 0.5s;
     transform:translateY(-50%) ;
+    opacity: 1;
 }
-
-
 
 .header-trainings {
     position: relative;
@@ -419,40 +452,10 @@ section {
     position: relative;
     z-index: 100;
     margin-top: 50px;
-    visibility: hidden;
+    opacity: 0;
     transition: 0.3s ease; 
     color: #f7f4f4;
     
-}
-
-.card_traning_shadow{
-    position: absolute;
-    top: 30%;
-    left: 8.4%;
-    width: calc(100% - 60px);
-    height: calc(100% - 110px);
-    background-color: rgba(255, 255, 255, 0.25);
-    box-shadow: rgba(219, 0, 18, 0.397) 0px 80px 90px, rgba(255, 255, 255, 0.2) 0px 40px 30px;
-    z-index: -1;
-    transition: 0.5s;
-    
-    
-}
-
-.card_traning_shadow:hover{
-    box-shadow: none;
-    transition: 0.5s;
-}
-
-
-.back_hover{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #3535357c;
-    z-index: 1;
-    transition: 0.5s;
-    opacity: 0;
 }
 
 .card-training:hover .back_hover{
@@ -460,12 +463,143 @@ section {
     transition: 0.5s;
 }
 
-.title-article {
-    margin-top: 100px;
+/*  */
+.abonement_cards{
     position: relative;
+    display: flex;
+    justify-content:center;
+}
+.card-abonement {
+    
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
+    background-color: #1e1e1f;
+    min-height: 30vh;
+    max-height: 40vh;
+    width: 40vh;
+    min-width: 30vh;
+    margin: 3.33vh;
     
 }
 
+.card-abonement:hover {
+    background-color: #1e1e1f93;
+    transition: 0.5s; 
+    
+}
 
+.card-abonement:hover .card_shadow{
+    box-shadow: none;
+    transition: 0.5s; 
+    
+}
+
+.card-abonement:hover .header-abonement{
+    color: #ffffff;
+    transition: 0.5s; 
+}
+
+.card-abonement:hover .description-abonement{
+    color: #ffffff;
+    visibility: visible;
+    transition: 0.5s;
+    transform:translateY(-50%) ;
+    opacity: 1;
+}
+
+.header-abonement {
+    position: relative;
+    color: #ffffff;
+    transition: 0.5s; 
+    vertical-align: middle;
+    margin-top: 0 ;
+    z-index: 11;
+}
+
+.description-abonement{
+    position: relative;
+    z-index: 100;
+    margin-top: 50px;
+    opacity: 0;
+    transition: 0.3s ease; 
+    color: #f7f4f4;
+    
+}
+
+.card-abonement:hover .back_hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/*  */
+
+.treners_cards{
+    position: relative;
+    display:  flex;
+    justify-content:center;
+}
+
+.card-treners {
+    
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: #1e1e1f;
+    min-height: 30vh;
+    max-height: 40vh;
+    width: 40vh;
+    min-width: 30vh;
+    margin: 3.33vh;
+    
+}
+
+.card-treners:hover {
+    background-color: #1e1e1f93;
+    transition: 0.5s; 
+    
+}
+
+.card-treners:hover .card_shadow{
+    box-shadow: none;
+    transition: 0.5s; 
+    
+}
+
+.card-treners:hover .header-treners{
+    color: #ffffff;
+    transition: 0.5s; 
+}
+
+.card-treners:hover .description-treners{
+    color: #ffffff;
+    visibility: visible;
+    transition: 0.5s;
+    transform:translateY(-50%) ;
+    opacity: 1;
+}
+
+.header-treners {
+    position: relative;
+    color: #ffffff;
+    transition: 0.5s; 
+    vertical-align: middle;
+    margin-top: 0 ;
+    z-index: 11;
+}
+
+.description-treners{
+    position: relative;
+    z-index: 100;
+    margin-top: 50px;
+    opacity: 0;
+    transition: 0.3s ease; 
+    color: #f7f4f4;
+    
+}
+
+.card-treners:hover .back_hover{
+    opacity: 1;
+    transition: 0.5s;
+}
 /* ---------------------------------------------------------------------------------------- */
