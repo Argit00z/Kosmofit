@@ -138,7 +138,14 @@
         <div class="card_shadow"></div>
       </section>  
     </section>
-    
+    <section>
+      <article>
+        <h1 class="title-article">Как добраться</h1>
+      </article>
+      <!-- карта -->
+
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A76e65df9ba32331d0c804a4953b076ba0912453f6fe48ab90c67c78d5b7b8826&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+    </section>
   </section>
 
 <?php include('footer.php'); ?>

@@ -356,6 +356,16 @@ section {
         transition: 0.5s ease;
         align-items: center;
     }
+    .abonement_cards{
+        flex-direction: column;
+        transition: 0.5s ease;
+        align-items: center;
+    }
+    .treners_cards{
+        flex-direction: column;
+        transition: 0.5s ease;
+        align-items: center;
+    }
 }
 .card_shadow{
     position: absolute;
