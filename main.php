@@ -31,11 +31,12 @@
         </div>
       </div>    
     </section>
-    <article>
+    <article style="border-bottom: solid 1px rgba(219, 0, 18, 0.397);">
       <h1 class="title-article">Наши услуги</h1>
     </article>
-    <section class="trainings-cards" >  
-      <section class="card-training" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/card1.jpg); background-size: 40vh; background-repeat: no-repeat; ">
+    <section class="trainings-cards" >
+      <div style="border-bottom: solid 1px rgba(219, 0, 18, 0.397);"></div>  
+      <section class="card-training" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/22.jpg); background-size: 40vh; background-repeat: no-repeat; ">
         <div class="back_hover"></div>
         <h1 class="header-trainings" style="padding-top: 5vh; padding-bottom: 5vh;">Тренировки</h1>
         <p class="description-trainings">Lorem ipsum dolor sit amet consectetur 
@@ -43,7 +44,7 @@
           laborum sunt sequi fuga aspernatur 
           maiores rem architecto nobis quae aliquam cumque odit quam dolorum, magni,
            quidem earum!</p>
-        <div class="card_shadow"></div>
+        <div class="card_shadow_trainings"></div>
       </section>
       <section class="card-training" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/ofp_b.jpg); background-size: 40vh; background-repeat: no-repeat; ">
         <div class="back_hover"></div>
@@ -53,7 +54,7 @@
           laborum sunt sequi fuga aspernatur 
           maiores rem architecto nobis quae aliquam cumque odit quam dolorum, magni,
            quidem earum!</p>
-        <div class="card_shadow"></div>
+        <div class="card_shadow_trainings"></div>
       </section>
       <section class="card-training" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/card2.webp); background-size: 40vh; background-repeat: no-repeat; ">
         <div class="back_hover"></div>
@@ -64,15 +65,15 @@
           maiores rem architecto nobis quae aliquam cumque odit quam dolorum, magni,
            quidem earum!</p>
         
-        <div class="card_shadow"></div>
+        <div class="card_shadow_trainings"></div>
       </section>
       
-    </section>
-    <article>
-      <h1 class="title-article">Абонементы</h1>
+    </section >
+    <article style="border-bottom: solid 1px rgba(219, 0, 18, 0.397);">
+      <h1 class="title-article" >Абонементы</h1>
     </article>
     <section class="abonement_cards" >  
-      <section class="card-abonement" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/card1.jpg); background-size: 40vh; background-repeat: no-repeat; ">
+      <section class="card-abonement" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/22.jpg); background-size: 40vh; background-repeat: no-repeat; ">
         <div class="back_hover"></div>
         <h1 class="header-abonement" style="padding-top: 5vh; padding-bottom: 5vh;">на год</h1>
         <p class="description-abonement">Lorem ipsum dolor sit amet consectetur 
@@ -80,9 +81,9 @@
           laborum sunt sequi fuga aspernatur 
           maiores rem architecto nobis quae aliquam cumque odit quam dolorum, magni,
            quidem earum!</p>
-        <div class="card_shadow"></div>
+        <div class="card_shadow_abonements"></div>
       </section>
-      <section class="card-abonement" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/card1.jpg); background-size: 40vh; background-repeat: no-repeat; ">
+      <section class="card-abonement" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/22.jpg); background-size: 40vh; background-repeat: no-repeat; ">
         <div class="back_hover"></div>
         <h1 class="header-abonement" style="padding-top: 5vh; padding-bottom: 5vh;">на месяц</h1>
         <p class="description-abonement">Lorem ipsum dolor sit amet consectetur 
@@ -90,9 +91,9 @@
           laborum sunt sequi fuga aspernatur 
           maiores rem architecto nobis quae aliquam cumque odit quam dolorum, magni,
            quidem earum!</p>
-        <div class="card_shadow"></div>
+        <div class="card_shadow_abonements"></div>
       </section>
-      <section class="card-abonement" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/card1.jpg); background-size: 40vh; background-repeat: no-repeat; ">
+      <section class="card-abonement" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/22.jpg); background-size: 40vh; background-repeat: no-repeat; ">
         <div class="back_hover"></div>
         <h1 class="header-abonement" style="padding-top: 5vh; padding-bottom: 5vh;">на день</h1>
         <p class="description-abonement">Lorem ipsum dolor sit amet consectetur 
@@ -100,46 +101,46 @@
           laborum sunt sequi fuga aspernatur 
           maiores rem architecto nobis quae aliquam cumque odit quam dolorum, magni,
            quidem earum!</p>
-        <div class="card_shadow"></div>
+        <div class="card_shadow_abonements"></div>
       </section>  
     </section>
-    <article>
-      <h1 class="title-article">Наши тренера</h1>
+    <article style="border-bottom: solid 1px rgba(219, 0, 18, 0.397);">
+      <h1 class="title-article">Наши тренеры</h1>
     </article>
     <section class="treners_cards">
       <section class="card-treners" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/car1.jpg); background-size: 40vh; background-repeat: no-repeat; ">
-        <div class="back_hover"></div>
+        <div class="back_hover" ></div>
         <h1 class="header-treners" style="padding-top: 3vh; padding-bottom: 3vh;">колянчик</h1>
         <p class="description-treners">Lorem ipsum dolor sit amet consectetur 
           adipisicing elit. Ullam, veniam magnam similique 
           laborum sunt sequi fuga aspernatur 
           maiores rem architecto nobis quae aliquam cumque odit quam dolorum, magni,
            quidem earum!</p>
-        <div class="card_shadow"></div>
+        <div class="card_shadow_treners"></div>
       </section>
-      <section class="card-treners" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/car1.jpg); background-size: 40vh; background-repeat: no-repeat; ">
+      <section class="card-treners" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/card1.jpg); background-size: 40vh; background-repeat: no-repeat; ">
         <div class="back_hover"></div>
-        <h1 class="header-treners" style="padding-top: 3vh; padding-bottom: 3vh;">колянчик</h1>
+        <h1 class="header-treners" style="padding-top: 3vh; padding-bottom: 3vh;">андрюша</h1>
         <p class="description-treners">Lorem ipsum dolor sit amet consectetur 
           adipisicing elit. Ullam, veniam magnam similique 
           laborum sunt sequi fuga aspernatur 
           maiores rem architecto nobis quae aliquam cumque odit quam dolorum, magni,
            quidem earum!</p>
-        <div class="card_shadow"></div>
+        <div class="card_shadow_treners"></div>
       </section>
-      <section class="card-treners" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/car1.jpg); background-size: 40vh; background-repeat: no-repeat; ">
+      <section class="card-treners" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/i.webp); background-size: 40vh; background-repeat: no-repeat; ">
         <div class="back_hover"></div>
-        <h1 class="header-treners" style="padding-top: 3vh; padding-bottom: 3vh;">колянчик</h1>
+        <h1 class="header-treners" style="padding-top: 3vh; padding-bottom: 3vh;">ирина</h1>
         <p class="description-treners">Lorem ipsum dolor sit amet consectetur 
           adipisicing elit. Ullam, veniam magnam similique 
           laborum sunt sequi fuga aspernatur 
           maiores rem architecto nobis quae aliquam cumque odit quam dolorum, magni,
            quidem earum!</p>
-        <div class="card_shadow"></div>
+        <div class="card_shadow_treners"></div>
       </section>  
     </section>
     <section>
-      <article>
+      <article style="border-bottom: solid 1px rgba(219, 0, 18, 0.397);">
         <h1 class="title-article">Как добраться</h1>
       </article>
       <!-- карта -->
@@ -147,5 +148,5 @@
       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A76e65df9ba32331d0c804a4953b076ba0912453f6fe48ab90c67c78d5b7b8826&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
     </section>
   </section>
-
+  
 <?php include('footer.php'); ?>

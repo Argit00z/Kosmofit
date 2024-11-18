@@ -33,7 +33,10 @@
 }
 
 /* СТИЛИ ДЛЯ ТЕГОВ HTML */
-
+html{
+    scrollbar-color: rgb(72, 9, 14) #000000;
+    scrollbar-width:thin;
+}
 body {
     width:auto;
     background: #000000;
@@ -47,6 +50,7 @@ body {
     margin:0 auto; 
     position:relative;
     display: block;
+    
 }
 
 
@@ -367,19 +371,19 @@ section {
         align-items: center;
     }
 }
-.card_shadow{
+.card_shadow_trainings{
     position: absolute;
     top: 30%;
     left: 8.4%;
-    width: calc(100% - 60px);
-    height: calc(100% - 110px);
+    width: calc(100% - 6vh);
+    height: calc(100% - 10vh);
     background-color: rgba(255, 255, 255, 0.25);
     box-shadow: rgba(219, 0, 18, 0.397) 0px 80px 90px, rgba(255, 255, 255, 0.2) 0px 40px 30px;
     z-index: -1;
     transition: 0.5s;    
 }
 
-.card_shadow:hover{
+.card_shadow_trainings:hover{
     box-shadow: none;
     transition: 0.5s;
 }
@@ -388,7 +392,7 @@ section {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #3535357c;
+    background-color: #1f1f1f7c;
     z-index: 1;
     transition: 0.5s;
     opacity: 0;
@@ -430,7 +434,7 @@ section {
     
 }
 
-.card-training:hover .card_shadow{
+.card-training:hover .card_shadow_trainings{
     box-shadow: none;
     transition: 0.5s; 
     
@@ -474,6 +478,25 @@ section {
 }
 
 /*  */
+.card_shadow_abonements{
+    position: absolute;
+    top: 30%;
+    left: 8.4%;
+    width: calc(100% - 6vh);
+    height: calc(100% - 10vh);
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: rgba(255, 212, 215, 0.35) 0px 60px 90px, rgba(255, 255, 255, 0.2) 0px 40px 30px;
+    z-index: -1;
+    transition: 0.5s;    
+}
+
+.card_shadow_abonements:hover{
+    box-shadow: none;
+    transition: 0.5s;
+}
+
+
+
 .abonement_cards{
     position: relative;
     display: flex;
@@ -499,7 +522,7 @@ section {
     
 }
 
-.card-abonement:hover .card_shadow{
+.card-abonement:hover .card_shadow_abonements{
     box-shadow: none;
     transition: 0.5s; 
     
@@ -543,7 +566,22 @@ section {
 }
 
 /*  */
+.card_shadow_treners{
+    position: absolute;
+    top: 30%;
+    left: 8.4%;
+    width: calc(100% - 6vh);
+    height: calc(100% - 10vh);
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: rgba(219, 0, 18, 0.397) 0px 80px 90px, rgba(255, 255, 255, 0.2) 0px 40px 30px;
+    z-index: -1;
+    transition: 0.5s;    
+}
 
+.card_shadow_treners:hover{
+    box-shadow: none;
+    transition: 0.5s;
+}
 .treners_cards{
     position: relative;
     display:  flex;
@@ -570,7 +608,7 @@ section {
     
 }
 
-.card-treners:hover .card_shadow{
+.card-treners:hover .card_shadow_treners{
     box-shadow: none;
     transition: 0.5s; 
     
