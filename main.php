@@ -8,12 +8,12 @@
           
           <div class="swiper-slide slide">
             <div class="slide-image" style="background-image: url(./photo/trenajer.jpg)"></div>
-            <span class="slide-title">Текст</span>
+            <span class="slide-title">Текст1</span>
           </div>
         
           <div class="swiper-slide slide">
             <div class="slide-image" style="background-image: url(./photo/XXXL.jpg)"></div>
-            <span class="slide-title">Текст</span>
+            <span class="slide-title">Текст2</span>
           </div>
         
           <!-- <div class="swiper-slide slide">
@@ -36,7 +36,7 @@
     </article>
     <section class="trainings-cards" >
       <div style="border-bottom: solid 1px rgba(219, 0, 18, 0.397);"></div>  
-      <section class="card-training" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/22.jpg); background-size: 40vh; background-repeat: no-repeat; ">
+      <section class="card-training" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/22.jpg); background-size: 41vh; background-repeat: no-repeat;">
         <div class="back_hover"></div>
         <h1 class="header-trainings" style="padding-top: 5vh; padding-bottom: 5vh;">Тренировки</h1>
         <p class="description-trainings">Lorem ipsum dolor sit amet consectetur 
@@ -46,7 +46,7 @@
            quidem earum!</p>
         <div class="card_shadow_trainings"></div>
       </section>
-      <section class="card-training" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/ofp_b.jpg); background-size: 40vh; background-repeat: no-repeat; ">
+      <section class="card-training" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/ofp_b.jpg); background-size: 41vh; background-repeat: no-repeat; ">
         <div class="back_hover"></div>
         <h1 class="header-trainings" style="padding-top: 3vh; padding-bottom: 3vh;">Групповые <br> <br> программы</h1>
         <p class="description-trainings">Lorem ipsum dolor sit amet consectetur 
@@ -56,7 +56,7 @@
            quidem earum!</p>
         <div class="card_shadow_trainings"></div>
       </section>
-      <section class="card-training" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/card2.webp); background-size: 40vh; background-repeat: no-repeat; ">
+      <section class="card-training" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/card2.webp); background-size: 41vh; background-repeat: no-repeat; ">
         <div class="back_hover"></div>
         <h1 class="header-trainings" style="padding-top: 5vh; padding-bottom: 5vh;">Сауна</h1>
         <p class="description-trainings">Lorem ipsum dolor sit amet consectetur 
@@ -73,7 +73,7 @@
       <h1 class="title-article" >Абонементы</h1>
     </article>
     <section class="abonement_cards" >  
-      <section class="card-abonement" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/22.jpg); background-size: 40vh; background-repeat: no-repeat; ">
+      <section class="card-abonement" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/22.jpg); background-size: 41vh; background-repeat: no-repeat; ">
         <div class="back_hover"></div>
         <h1 class="header-abonement" style="padding-top: 5vh; padding-bottom: 5vh;">на год</h1>
         <p class="description-abonement">Lorem ipsum dolor sit amet consectetur 
@@ -83,7 +83,7 @@
            quidem earum!</p>
         <div class="card_shadow_abonements"></div>
       </section>
-      <section class="card-abonement" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/22.jpg); background-size: 40vh; background-repeat: no-repeat; ">
+      <section class="card-abonement" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/22.jpg); background-size: 41vh; background-repeat: no-repeat; ">
         <div class="back_hover"></div>
         <h1 class="header-abonement" style="padding-top: 5vh; padding-bottom: 5vh;">на месяц</h1>
         <p class="description-abonement">Lorem ipsum dolor sit amet consectetur 
@@ -93,7 +93,7 @@
            quidem earum!</p>
         <div class="card_shadow_abonements"></div>
       </section>
-      <section class="card-abonement" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/22.jpg); background-size: 40vh; background-repeat: no-repeat; ">
+      <section class="card-abonement" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/22.jpg); background-size: 41vh; background-repeat: no-repeat; ">
         <div class="back_hover"></div>
         <h1 class="header-abonement" style="padding-top: 5vh; padding-bottom: 5vh;">на день</h1>
         <p class="description-abonement">Lorem ipsum dolor sit amet consectetur 
@@ -108,17 +108,18 @@
       <h1 class="title-article">Наши тренеры</h1>
     </article>
     <section class="treners_cards">
-      <section class="card-treners" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/car1.jpg); background-size: 40vh; background-repeat: no-repeat; ">
+      <section class="card-treners" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/car1.jpg); background-size: 41vh; background-repeat: no-repeat; ">
         <div class="back_hover" ></div>
         <h1 class="header-treners" style="padding-top: 3vh; padding-bottom: 3vh;">колянчик</h1>
         <p class="description-treners">Lorem ipsum dolor sit amet consectetur 
           adipisicing elit. Ullam, veniam magnam similique 
           laborum sunt sequi fuga aspernatur 
           maiores rem architecto nobis quae aliquam cumque odit quam dolorum, magni,
-           quidem earum!</p>
+          quidem earum!
+        </p>
         <div class="card_shadow_treners"></div>
       </section>
-      <section class="card-treners" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/card1.jpg); background-size: 40vh; background-repeat: no-repeat; ">
+      <section class="card-treners" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/card1.jpg); background-size: 41vh; background-repeat: no-repeat; ">
         <div class="back_hover"></div>
         <h1 class="header-treners" style="padding-top: 3vh; padding-bottom: 3vh;">андрюша</h1>
         <p class="description-treners">Lorem ipsum dolor sit amet consectetur 
@@ -128,7 +129,7 @@
            quidem earum!</p>
         <div class="card_shadow_treners"></div>
       </section>
-      <section class="card-treners" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/i.webp); background-size: 40vh; background-repeat: no-repeat; ">
+      <section class="card-treners" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo/i.webp); background-size: 41vh; background-repeat: no-repeat; ">
         <div class="back_hover"></div>
         <h1 class="header-treners" style="padding-top: 3vh; padding-bottom: 3vh;">ирина</h1>
         <p class="description-treners">Lorem ipsum dolor sit amet consectetur 
