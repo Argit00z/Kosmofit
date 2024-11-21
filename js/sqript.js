@@ -42,28 +42,6 @@ class Slideshow {
           // lazy: true,
           // preloadImages: false,
 
-          pagination: {
-            el: '.slideshow-pagination',
-            clickable: true,
-            bulletClass: 'slideshow-pagination-item',
-            bulletActiveClass: 'active',
-            clickableClass: 'slideshow-pagination-clickable',
-            modifierClass: 'slideshow-pagination-',
-            renderBullet: function (index, className) {
-              
-              var slideIndex = index,
-                  number = (index <= 8) ? '0' + (slideIndex + 1) : (slideIndex + 1);
-              
-              var paginationItem = '<span class="slideshow-pagination-item">';
-              paginationItem += '<span class="pagination-number">' + number + '</span>';
-              paginationItem = (index <= 8) ? paginationItem + '<span class="pagination-separator"><span class="pagination-separator-loader"></span></span>' : paginationItem;
-              paginationItem += '</span>';
-            
-              return paginationItem;
-              
-            },
-          },
-
           // Navigation arrows
           navigation: {
             nextEl: '.slideshow-navigation-button.next',
@@ -146,25 +124,6 @@ class Slideshow {
       
         //this.animatePagination()
     
-    }
-    animatePagination(swiper, paginationEl) {
-            
-      // Animate pagination
-      this.DOM.paginationItemsLoader = paginationEl.querySelectorAll('.pagination-separator-loader');
-      this.DOM.activePaginationItem = paginationEl.querySelector('.slideshow-pagination-item.active');
-      this.DOM.activePaginationItemLoader = this.DOM.activePaginationItem.querySelector('.pagination-separator-loader');
-      
-      console.log(swiper.pagination);
-      // console.log(swiper.activeIndex);
-      
-      // Reset and animate
-        TweenMax.set(this.DOM.paginationItemsLoader, {scaleX: 0});
-        TweenMax.to(this.DOM.activePaginationItemLoader, this.config.slideshow.pagination.duration, {
-          startAt: {scaleX: 0},
-          scaleX: 1,
-        });
-      
-      
     }
     
 }

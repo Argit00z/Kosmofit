@@ -79,9 +79,9 @@ section {
 .swiper-container {
     width: 100%;
     height: 100%;
-}
+  }
   
-.slide {
+  .slide {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,9 +90,8 @@ section {
     font-size: 18px;
     background: #fff;
     overflow: hidden;
-}
-
-.slide-image {
+  }
+  .slide-image {
     position: absolute;
     top: -200px;
     left: -200px;
@@ -100,9 +99,8 @@ section {
     height: calc(100% + 400px);
     background-position: 50% 50%;
     background-size: cover;
-}
-
-.slide-title {
+  }
+  .slide-title {
     padding: 5 5 5px;
     margin-left: 70px;
     margin-bottom: 15PX;
@@ -110,20 +108,25 @@ section {
     font-weight: 50; 
     color: transparent; 
     -webkit-text-stroke: 2px rgb(255, 255, 255);
+    
     line-height: 60PX; 
-}
-
-.slide-title span {
+  }
+  @media (min-width: 45em) {
+    .slide-title {
+      font-size: 7vw;
+      max-width: none;
+    }
+  }
+  .slide-title span {
     white-space: pre;
     display: inline-block;
-    opacity: 0;
-}
+    opacity: 1;
+  }
   
-.slideshow {
+  .slideshow {
     position: relative;
-}
-
-.slideshow-pagination {
+  }
+  .slideshow-pagination {
     position: absolute;
     bottom: 5rem;
     left: 0;
@@ -134,34 +137,27 @@ section {
     align-items: center;
     transition: 0.3s opacity;
     z-index: 1004;
-}
-
-.slideshow-pagination-item {
+  }
+  .slideshow-pagination-item {
     display: flex;
     align-items: center;
-}
-
-.slideshow-pagination-item .pagination-number {
+  }
+  .slideshow-pagination-item .pagination-number {
     opacity: 0.5;
-}
-
-.slideshow-pagination-item:hover, .slideshow-pagination-item:focus {
+  }
+  .slideshow-pagination-item:hover, .slideshow-pagination-item:focus {
     cursor: pointer;
-}
-
-.slideshow-pagination-item:last-of-type .pagination-separator {
+  }
+  .slideshow-pagination-item:last-of-type .pagination-separator {
     width: 0;
-}
-
-.slideshow-pagination-item.active .pagination-number {
+  }
+  .slideshow-pagination-item.active .pagination-number {
     opacity: 1;
-}
-
-.slideshow-pagination-item.active .pagination-separator {
+  }
+  .slideshow-pagination-item.active .pagination-separator {
     width: 10vw;
-}
-
-.slideshow-navigation-button.next {
+  }
+  .slideshow-navigation-button.next {
     position: absolute;
     top: 50%;
     display: flex;
@@ -172,40 +168,62 @@ section {
     z-index: 1111;
     transition: all 0.3s ease;
     color: #FFF;
-    animation: arrow-right 2s infinite;    
-}
-
-.slideshow-navigation-button.prev {
-    position: absolute;
-    top: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:3rem;
-    width: 5rem;
-    z-index: 1111;
-    transition: all 0.3s ease;
-    color: #FFF;
-    animation: arrow-left 2s infinite;    
-}
-
-.slideshow-navigation-button.next:hover, .slideshow-navigation-button.next:focus {
-    cursor: pointer;
-    animation: none;   
-}
-
-.slideshow-navigation-button.prev:hover, .slideshow-navigation-button.prev:focus {
-    cursor: pointer;
-    animation: none;    
-}
-  
-.slideshow-navigation-button.prev {
-    left: 0;
-}
-
-.slideshow-navigation-button.next {
+    animation: arrow-right 2s infinite;
+    transition: 0.5s ease;
     right: 0;
-}
+    
+  }
+  .slideshow-navigation-button.prev {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:3rem;
+    width: 5rem;
+    z-index: 1111;
+    transition: all 0.3s ease;
+    color: #FFF;
+    animation: arrow-left 2s infinite;
+    transition: 0.5s ease;
+    left: 0;
+    
+  }
+
+
+
+  .slideshow-navigation-button.next:hover, .slideshow-navigation-button.next:focus {
+    cursor: pointer;
+    animation: none;
+    
+    
+  }
+
+  .slideshow-navigation-button.prev:hover, .slideshow-navigation-button.prev:focus {
+    cursor: pointer;
+    animation: none;
+    
+  }
+
+  .slideshow-navigation-button.next:active{
+    opacity: 0;
+    transition: 0.5s ease;
+  }
+  
+  .slideshow-navigation-button.prev:active{
+    opacity: 0;
+    transition: 0.5s ease;
+  }
+  
+  
+  .slideshow-navigation-button.prev {
+    left: 0;
+  }
+  .slideshow-navigation-button.next {
+    right: 0;
+  }
+  
+
 
 /* ---------------------------------------------------------------------------------------- */
 
@@ -569,13 +587,15 @@ section {
 .card_shadow_treners{
     position: absolute;
     top: 30%;
-    left: 8.4%;
-    width: calc(100% - 6vh);
-    height: calc(100% - 15vh);
-    background-color: rgba(255, 255, 255, 0.25);
+    left: 0;
+    width: calc(110% - 4vh);
+    height: calc(100% - 12vh);
+    background-color: rgba(255, 255, 255, 0);
     box-shadow: rgba(219, 0, 18, 0.397) 0px 80px 90px, rgba(255, 255, 255, 0.2) 0px 40px 30px;
-    z-index: -1;
-    transition: 0.5s;    
+    z-index: 0;
+    transition: 0.5s;
+    
+      
 }
 
 .card_shadow_treners:hover{
@@ -585,21 +605,23 @@ section {
 .treners_cards{
     position: relative;
     display:  flex;
-    justify-content:center;
+    justify-content:center; 
 }
+
 
 .card-treners {
     
     position: relative;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    background-color: #1e1e1f;
-    min-height: 40vh;
-    max-height: 50vh;
-    width: 40vh;
+    min-height: 30vh;
+    max-height: 40vh;
+    width: 30vh;
     min-width: 30vh;
     margin: 3.33vh;
-    
+    background-color: #000000;
+    z-index:3;
+
 }
 
 .card-treners:hover {
@@ -614,7 +636,9 @@ section {
     
 }
 
-.card-treners:hover .header-treners{
+.card-treners:hover .footer-treners{
+    background-color: rgba(219, 0, 18, 0.397);
+    backdrop-filter: blur(2px);
     color: #ffffff;
     transition: 0.5s; 
 }
@@ -627,13 +651,17 @@ section {
     opacity: 1;
 }
 
-.header-treners {
+.footer-treners {
     position: relative;
     color: #ffffff;
     transition: 0.5s; 
     vertical-align: middle;
-    margin-top: 0 ;
-    z-index: 11;
+    margin-top: 32vh;
+    padding: 12px 10px 15px 5px;
+    z-index: 2;
+    
+    border-radius: 0 20px 20px 0;
+    float: left;
 }
 
 .description-treners{
@@ -650,4 +678,27 @@ section {
     opacity: 1;
     transition: 0.5s;
 }
+
+.opacity_card{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.466);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.card-treners:hover .opacity_card{
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+/* .footer-treners:hover .opacity_card:hover{
+    
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.5s;
+} */
+
+
+
 /* ---------------------------------------------------------------------------------------- */
