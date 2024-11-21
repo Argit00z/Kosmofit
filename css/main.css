@@ -49,7 +49,7 @@ body {
     max-width:auto; 
     margin:0 auto; 
     position:relative;
-    display: block;
+    display: flexbox;
     
 }
 

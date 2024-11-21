@@ -131,25 +131,47 @@
         <div class="opacity_card"></div>
         <div class="card_shadow_treners"></div>
       </section>
-      <section class="card-treners" style="background-image: url(photo/i.webp); background-size: 41vh; background-repeat: no-repeat; ">
+    </section>
+    <section class="treners_cards">
+      <section class="card-treners" style="background-image: url(photo/car1.jpg); background-size: 41vh; background-repeat: no-repeat; ">
         
         <h1 class="footer-treners">Иван Иванов</h1>
         <div class="opacity_card"></div>
         <div class="card_shadow_treners"></div>
-      </section>  
-      <section class="card-treners" style="background-image: url(photo/i.webp); background-size: 41vh; background-repeat: no-repeat; ">
+      </section>
+      <section class="card-treners" style="background-image: url(photo/card1.jpg); background-size: 41vh; background-repeat: no-repeat; ">
         
         <h1 class="footer-treners">Иван Иванов</h1>
         <div class="opacity_card"></div>
         <div class="card_shadow_treners"></div>
       </section>    
     </section>
+    <section class="treners_cards">
+      <section class="card-treners" style="background-image: url(photo/car1.jpg); background-size: 41vh; background-repeat: no-repeat; ">
+        
+        <h1 class="footer-treners">Иван Иванов</h1>
+        <div class="opacity_card"></div>
+        <div class="card_shadow_treners"></div>
+      </section>
+      <section class="card-treners" style="background-image: url(photo/card1.jpg); background-size: 41vh; background-repeat: no-repeat; ">
+        
+        <h1 class="footer-treners">Иван Иванов</h1>
+        <div class="opacity_card"></div>
+        <div class="card_shadow_treners"></div>
+      </section>
+      <section class="card-treners" style="background-image: url(photo/i.webp); background-size: 41vh; background-repeat: no-repeat; ">
+        
+        <h1 class="footer-treners">Иван Иванов</h1>
+        <div class="opacity_card"></div>
+        <div class="card_shadow_treners"></div>
+      </section>
+    </section>
     <section>
       <article style="border-bottom: solid 1px rgba(219, 0, 18, 0.397);">
         <h1 class="title-article">Как добраться</h1>
       </article>
       <!-- карта -->
-      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aaa3d3f93d0c8f14e73695242847d1d4ceb48995fba195fcc3377c61584844574&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aaa3d3f93d0c8f14e73695242847d1d4ceb48995fba195fcc3377c61584844574&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
       <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A76e65df9ba32331d0c804a4953b076ba0912453f6fe48ab90c67c78d5b7b8826&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script> -->
     </section>
   </section>
