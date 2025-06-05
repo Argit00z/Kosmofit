@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kosmofit - Фитнес Клуб Премиум Класса</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fas fa-dumbbell"></i>
+            <h1>Kosmofit</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#memberships">Абонементы</a></li>
+                <li><a href="#trainers">Тренеры</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="container" id="home">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Добро пожаловать в <span>Kosmofit</span></h2>
+                <p>Премиум фитнес-клуб с современным оборудованием, профессиональными тренерами и лучшими условиями для вашего здоровья и красоты.</p>
+                <a href="#memberships" class="btn">Выбрать абонемент</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&h=500&q=80" alt="Фитнес клуб Kosmofit">
+            </div>
+        </section>
+    </div>
+
+    <!-- Slider Section -->
+    <section class="slider-section" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Наши Залы</h2>
+            </div>
+            
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1200&h=500&q=80');">
+                        <div class="slide-content">
+                            <h3>Тренажерный зал</h3>
+                            <p>Современное оборудование от ведущих мировых производителей для эффективных тренировок</p>
+                            <a href="#memberships" class="btn">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1549060279-7e168fce7090?auto=format&fit=crop&w=1200&h=500&q=80');">
+                        <div class="slide-content">
+                            <h3>Зал групповых занятий</h3>
+                            <p>Просторный зал для йоги, пилатеса, танцев и функциональных тренировок</p>
+                            <a href="#memberships" class="btn">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&h=500&q=80');">
+                        <div class="slide-content">
+                            <h3>Бассейн и SPA</h3>
+                            <p>25-метровый бассейн, сауны, хамам и зона отдыха для восстановления</p>
+                            <a href="#memberships" class="btn">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation arrows -->
+                <div class="slider-arrow prev">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="slider-arrow next">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            
+            <div class="slider-nav">
+                <div class="slider-dot active"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <div class="container">
+        <section class="cards-section" id="memberships">
+            <div class="section-title">
+                <h2>Абонементы</h2>
+                <p>Выберите подходящий вариант и начните свой путь к идеальной форме</p>
+            </div>
+            
+            <div class="cards-container">
+                <div class="card" data-id="1">
+                    
+                    <div class="card-icon" style="background: linear-gradient(to right, #e63946, #d90429);">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h2>Стандарт</h2>
+                    <div class="card-content">
+                        <div class="price">₽ 5 900 <span>/мес</span></div>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Посещение тренажерного зала</li>
+                            <li><i class="fas fa-check"></i> Групповые занятия (до 3 в неделю)</li>
+                            <li><i class="fas fa-times"></i> Бассейн и SPA</li>
+                            <li><i class="fas fa-times"></i> Персональные тренировки</li>
+                        </ul>
+                        <a href="#" class="btn show-qr">Купить абонемент</a>
+                    </div>
+                </div>
+                
+                <div class="card popular" data-id="2">
+                    <div class="popular-tag">Популярный</div>
+                    <div class="card-icon" style="background: linear-gradient(to right, #e63946, #d90429);">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h2>Премиум</h2>
+                    <div class="card-content">
+                        <div class="price">₽ 8 900 <span>/мес</span></div>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Полный доступ ко всем зонам</li>
+                            <li><i class="fas fa-check"></i> Неограниченные групповые занятия</li>
+                            <li><i class="fas fa-check"></i> Бассейн и SPA без ограничений</li>
+                            <li><i class="fas fa-check"></i> 2 персональные тренировки</li>
+                        </ul>
+                        <a href="#" class="btn show-qr">Купить абонемент</a>
+                    </div>
+                </div>
+                
+                <div class="card" data-id="3">
+                    
+                    <div class="card-icon" style="background: linear-gradient(to right, #e63946, #d90429);">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h2>Безлимит</h2>
+                    <div class="card-content">
+                        <div class="price">₽ 12 900 <span>/мес</span></div>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Полный доступ 24/7</li>
+                            <li><i class="fas fa-check"></i> Все групповые занятия</li>
+                            <li><i class="fas fa-check"></i> Бассейн и SPA без ограничений</li>
+                            <li><i class="fas fa-check"></i> 4 персональные тренировки</li>
+                        </ul>
+                        <a href="#" class="btn show-qr">Купить абонемент</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Trainers Section -->
+    <section class="trainers-section" id="trainers">
+        <div class="container">
+            <div class="section-title">
+                <h2>Наши Тренеры</h2>
+                <p>Профессиональная команда экспертов в мире фитнеса</p>
+            </div>
+            
+            <div class="trainers-container">
+                <div class="trainer">
+                    <div class="trainer-photo" style="background-image: url('https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=300&h=300&q=80');"></div>
+                    <h3>Анна Иванова</h3>
+                    <p>Фитнес-тренер, специалист по функциональному тренингу</p>
+                </div>
+                
+                <div class="trainer">
+                    <div class="trainer-photo" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=300&h=300&q=80');"></div>
+                    <h3>Дмитрий Петров</h3>
+                    <p>Тренер по силовым видам спорта, мастер спорта</p>
+                </div>
+                
+                <div class="trainer">
+                    <div class="trainer-photo" style="background-image: url('https://images.unsplash.com/photo-1549060279-7e168fce7090?auto=format&fit=crop&w=300&h=300&q=80');"></div>
+                    <h3>Екатерина Сидорова</h3>
+                    <p>Инструктор йоги и пилатеса, сертифицированный специалист</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contacts">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Контакты</h2>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>г. Москва, ул. Фитнесная, 15</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+7 (495) 123-45-67</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@kosmofit.ru</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Пн-Пт: 7:00 - 23:00<br>Сб-Вс: 8:00 - 22:00</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.372951944779!2d37.61842331593095!3d55.75367698055214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506b52311f!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0JrQvtC70LvQtdC00LY!5e0!3m2!1sru!2sru!4v1650000000000!5m2!1sru!2sru" 
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Kosmofit</h3>
+                <p>Премиальный фитнес-клуб с современным оборудованием и профессиональными тренерами для достижения ваших целей.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#memberships">Абонементы</a></li>
+                    <li><a href="#trainers">Тренеры</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Фитнесная, 15</p>
+                <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                <p><i class="fas fa-envelope"></i> info@kosmofit.ru</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Kosmofit. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for QR Code -->
+    <div class="modal" id="qr-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ваш абонемент</h2>
+            <div class="qr-container">
+                <div class="qr-placeholder">
+                    <i class="fas fa-qrcode"></i>
+                </div>
+                <p>Отсканируйте QR-код на ресепшене для активации абонемента</p>
+                <div class="membership-info">
+                    <p><strong>Тип:</strong> <span id="membership-name">Премиум</span></p>
+                    <p><strong>Срок действия:</strong> 30 дней с момента активации</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>
