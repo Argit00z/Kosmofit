@@ -23,6 +23,10 @@ function showSlide(index, direction = 1) {
     
     slider.style.transform = `translateX(-${currentSlide * 100}%)`;
     
+    const isMobile = window.innerWidth <= 576;
+    slider.style.transition = isMobile ? 'transform 0.5s ease' : 'transform 0.8s ease-in-out';
+    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+    
     setTimeout(() => {
         slides[currentSlide].classList.add('active');
         updateDots();
@@ -57,12 +61,23 @@ function resetAutoSlide() {
 function addTouchEvents() {
     slider.addEventListener('touchstart', (e) => {
         touchStartX = e.changedTouches[0].screenX;
+        // Останавливаем автоматическое перелистывание при касании
+        clearInterval(autoSlideInterval);
     }, { passive: true });
 
     slider.addEventListener('touchend', (e) => {
         touchEndX = e.changedTouches[0].screenX;
         handleSwipe();
+        // Возобновляем автоматическое перелистывание после свайпа
+        resetAutoSlide();
     }, { passive: true });
+    
+    // Предотвращаем прокрутку страницы при горизонтальном свайпе
+    slider.addEventListener('touchmove', (e) => {
+        if (Math.abs(e.touches[0].screenX - touchStartX) > 10) {
+            e.preventDefault();
+        }
+    }, { passive: false });
 }
 
 function handleSwipe() {
@@ -163,3 +178,41 @@ setTimeout(() => {
 }, 100);
 addTouchEvents();
 startAutoSlide();
+
+window.addEventListener('load', function() {
+  const preloader = document.querySelector('.preloader');
+  
+  // Добавляем класс для плавного исчезновения
+  preloader.classList.add('preloader--hidden');
+  
+  // Удаляем прелоадер из DOM после анимации
+  setTimeout(() => {
+    preloader.remove();
+  }, 500); // Время должно совпадать с transition в CSS
+});
+// Burger menu functionality
+const burgerMenu = document.querySelector('.burger-menu');
+const nav = document.querySelector('nav ul');
+
+burgerMenu.addEventListener('click', () => {
+    burgerMenu.classList.toggle('active');
+    nav.classList.toggle('active');
+    
+    // Disable scroll when menu is open
+    if (nav.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = '';
+    }
+});
+
+// Close menu when clicking on a link
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+            burgerMenu.classList.remove('active');
+            nav.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+});
