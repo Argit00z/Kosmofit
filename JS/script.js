@@ -216,3 +216,9 @@ document.querySelectorAll('nav a').forEach(link => {
         }
     });
 });
+
+
+document.getElementById('f675605').contentWindow.document.head.insertAdjacentHTML(
+  'beforeend',
+  '<style>element.style {background-color: rgb(63, 106, 190);}</style>'
+);

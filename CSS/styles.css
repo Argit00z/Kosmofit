@@ -614,6 +614,14 @@ nav a:hover::after {
     background-position: center;
 }
 
+.rasp-section {
+    padding: 5rem 0;
+    background: #f9f9f9;
+    background-size: cover;
+    background-position: center;
+}
+
+
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -827,6 +835,11 @@ footer {
     color: var(--accent-4);
 }
 
+
+.element.style {
+    background-color: rgb(0, 53, 160);
+}
+
 /* Animations */
 @keyframes spin {
   0% { transform: rotate(0deg); }
@@ -1020,3 +1033,4 @@ footer {
         display: none;
     }
 }
+

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КосмоFIT - Фитнес Клуб Премиум Класса</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <!-- <div class="preloader">
+        <div class="preloader__content">
+            <img src="../img/logo.png" class="preloader__spinner" alt="Логотип">
+        </div>
+    </div> -->
+    <!-- Header -->
+    <header>
+        <a style="text-decoration: none;" href="/index.html">
+            <div class="logo">
+                <img src="../img/logo.png" class="cosmofit-logo" alt="Логотип">
+                <h1>КосмоFIT</h1>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/index.html#services">Услуги</a></li>
+                <li><a href="/index.html#memberships">Абонементы</a></li>
+                <li><a href="/index.html#trainers">Тренеры</a></li>
+                <li><a href="./raspisanie.html">Расписание</a></li>
+                <li><a href="/index.html#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <div class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="contact-section" id="contacts">
+        <div class="container">
+                <p style="text-align: center;">
+                    <span style="line-height: 1.5;">
+                        <iframe id="f675605" src="https://kosmofitclubmailru.impulsecrm.ru/widget/1" style="min-width: 100%; width: 100%; min-height:600px; border:0; transform:translateZ(0); background-color: #e63946;" frameborder="0" scrolling="no" height="1000" width="1336px">
+                        </iframe>
+                        <script>
+                            const f675605 = document.getElementById('f675605');
+
+                            const iws1PostScroll = function(e) {
+
+                                const offset = Math.max(1, -f675605.getBoundingClientRect().top);
+
+                                f675605.contentWindow.postMessage({ iws1ScrollY: offset }, "*");
+
+                            };
+
+                            const iw1PostUrl = function(url) {
+
+                                f675605.contentWindow.postMessage({ iw1Url: url }, "*");
+
+                            };
+
+                            const iw1PostStorage = function(name) {
+
+                                const value = localStorage.getItem(name)
+
+                                if (value !== null) {
+
+                                f675605.contentWindow.postMessage({ iw1Storage: { name, value } }, "*");
+
+                                }
+
+                            };
+
+                            window.addEventListener('message', function(e) {
+
+                                const loaded = e.data.iw1Loaded;
+
+                                if (loaded) {
+
+                                iw1PostUrl(window.location.href);
+
+                                iw1PostStorage('impulsecrm_active');
+
+                                iw1PostStorage('impulsecrm_verified');
+
+                                }
+
+                                const height = e.data.iws1Height;
+
+                                if (height) {
+
+                                f675605.height = height;
+
+                                iws1PostScroll();
+
+                                }
+
+                                const storage = e.data.iw1Storage;
+
+                                if (storage) {
+
+                                localStorage.setItem(storage.name, storage.value);
+
+                                }
+
+                                const sent = e.data.iws1Sent;
+
+                                if (sent) {
+
+                                // Заявка отправлена
+
+                                }
+
+                            });
+
+                            window.addEventListener('scroll', iws1PostScroll);
+                        </script>
+                    </span>
+                </p>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>КосмоFIT</h3>
+                <p>Премиальный фитнес-клуб с современным оборудованием и профессиональными тренерами для достижения ваших целей.</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#memberships">Абонементы</a></li>
+                    <li><a href="#trainers">Тренеры</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-map-marker-alt"></i> г. Жуковский, ул. Гагарина, 85Б, этаж 3</p>
+                <p><i class="fas fa-phone"></i> +7 (926) 061-69-44</p>
+                <p><i class="fas fa-envelope"></i> info@kosmofit.ru</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Kosmofit. Все права защищены.</p>
+        </div>
+    </footer>
+
+
+    <script src="./JS/script.js"></script>
+</body>
+</html>
