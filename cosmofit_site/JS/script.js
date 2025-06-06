@@ -1,66 +1,110 @@
-// Slider functionality
 const slider = document.querySelector('.slider');
 const slides = document.querySelectorAll('.slide');
-const dots = document.querySelectorAll('.slider-dot');
 const prevArrow = document.querySelector('.slider-arrow.prev');
 const nextArrow = document.querySelector('.slider-arrow.next');
-
+const dotsContainer = document.querySelector('.slider-nav');
+let dots = document.querySelectorAll('.slider-dot');
+const slideCount = slides.length;
 let currentSlide = 0;
 let isAnimating = false;
-const slideCount = slides.length;
+let autoSlideInterval;
+let touchStartX = 0;
+let touchEndX = 0;
 
-function showSlide(index) {
+function showSlide(index, direction = 1) {
+    console.log('Вызвана функция showSlide с индексом:', index);
     if (isAnimating) return;
     
     isAnimating = true;
     
-    // Remove active class from all slides
     slides.forEach(slide => slide.classList.remove('active'));
     
-    // Calculate the new slide index
-    currentSlide = index;
+    currentSlide = (index + slideCount) % slideCount;
     
-    // Handle looping
-    if (currentSlide < 0) {
-        currentSlide = slideCount - 1;
-    } else if (currentSlide >= slideCount) {
-        currentSlide = 0;
-    }
-    
-    // Update slider position
     slider.style.transform = `translateX(-${currentSlide * 100}%)`;
     
-    // Add active class to current slide
-    slides[currentSlide].classList.add('active');
+    setTimeout(() => {
+        slides[currentSlide].classList.add('active');
+        updateDots();
+        isAnimating = false;
+    }, 50);
     
-    // Update active dot
-    dots.forEach(dot => dot.classList.remove('active'));
-    dots[currentSlide].classList.add('active');
-    
-    isAnimating = false;
+    console.log('Вызвана функция resetAutoSlide');
+    resetAutoSlide();
 }
 
-// Initialize slider
+function updateDots() {
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentSlide);
+    });
+}
+
+function startAutoSlide() {
+    console.log('Запущен таймер автоматического перелистывания');
+    autoSlideInterval = setInterval(() => {
+        console.log('Автоматическое перелистывание: вызван showSlide');
+        showSlide(currentSlide + 1);
+    }, 5000);
+}
+
+function resetAutoSlide() {
+    console.log('Сброс таймера: clearInterval');
+    clearInterval(autoSlideInterval);
+    console.log('Запуск нового таймера: startAutoSlide');
+    startAutoSlide();
+}
+
+function addTouchEvents() {
+    slider.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    slider.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, { passive: true });
+}
+
+function handleSwipe() {
+    const threshold = 50;
+    if (touchEndX < touchStartX - threshold) {
+        showSlide(currentSlide + 1);
+    } else if (touchEndX > touchStartX + threshold) {
+        showSlide(currentSlide - 1);
+    }
+}
+
+if (prevArrow) {
+    prevArrow.addEventListener('click', () => {
+        console.log('Нажата предыдущая стрелка');
+        showSlide(currentSlide - 1);
+    });
+} else {
+    console.error('Элемент .slider-arrow.prev не найден');
+}
+
+if (nextArrow) {
+    nextArrow.addEventListener('click', () => {
+        console.log('Нажата следующая стрелка');
+        showSlide(currentSlide + 1);
+    });
+} else {
+    console.error('Элемент .slider-arrow.next не найден');
+}
+
 dots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
         showSlide(index);
     });
 });
 
-// Arrow navigation
-prevArrow.addEventListener('click', () => {
-    showSlide(currentSlide - 1);
+document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+        clearInterval(autoSlideInterval);
+    } else {
+        resetAutoSlide();
+    }
 });
-
-nextArrow.addEventListener('click', () => {
-    showSlide(currentSlide + 1);
-});
-
-// Auto slide
-setInterval(() => {
-    showSlide(currentSlide + 1);
-}, 5000);
-
 // Modal functionality
 const modal = document.getElementById('qr-modal');
 const closeBtn = document.querySelector('.close');
@@ -86,8 +130,6 @@ window.addEventListener('click', (e) => {
         modal.style.display = 'none';
     }
 });
-
-// Smooth scrolling for navigation
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -104,8 +146,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
-// Header scroll effect
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     if (window.scrollY > 100) {
@@ -121,3 +161,5 @@ window.addEventListener('scroll', () => {
 setTimeout(() => {
     showSlide(0);
 }, 100);
+addTouchEvents();
+startAutoSlide();
